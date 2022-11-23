@@ -9,12 +9,6 @@
       </ul>
     </div>
 
-    {{ if not .Site.Params.tocInline }}
-    <div id="toc-footer" style="display: none">
-      {{ .TableOfContents }}
-    </div>
-    {{ end }}
-
     <div id="share-footer" style="display: none">
       {{ .Scratch.Set "icon_class_name" "fa-lg" }}
       {{ partial "share.html" . }}
